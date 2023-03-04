@@ -1,0 +1,62 @@
+Psuedocode: 
+
+Reason to party planner 
+
+must be reactive to screen size, large, small and everything in between
+
+site will load with header of the project name
+
+initial button that asks "do you want to party?"
+then the next prompt will come up to show Buttons will prompt user to choose 7 or 14 day schedule 
+
+set to the lcoation to USA, american holidays, and the date range being 7 or 14 days from the current day. 
+
+Functionality
+MVP: -weather API to be able to pull weather: precipiation and temperature. 
+     -allow user to set location to get weather report 
+MVP: -holiday API will just pull the available holidays for the set calendar range that the user picked and display 
+     -will start code with public holidays
+MVP: -be able to input the date range to show holidays
+
+Will use Bulma CSS framework to stylize the page 
+
+user story to put in subheader to explain the page. "hey, do you like to party?" 
+
+extra if time permits: stylize the page to look like a party as decorations
+
+We will have the home page with title, the sub heading for the user story. 
+We will have buttons to select the forecast 
+We will have a new box load underneath that shows the information
+We will have a search bar container for the location 
+
+In the results container: 
+    We will have side by side boxes displaying the weather 
+        the choice with the 7 day forecast will populate 1 row of 7 boxes
+
+    We will have side by side boxes displaying the holidays
+        split the box to show the holiday with the weather
+
+We will have a "clear" button on the page to wipe the local memory to reset the stored data
+
+APIs to use:
+https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
+https://docs.getfestivo.com/docs/products/public-holidays-api/list-holidays/
+
+Tasks: 
+Seanovan 
+-html setting up the layout of the page headers, boxes, subheaders, buttons, search bar 
+-design
+-reactive design
+-
+
+William 
+-weather API
+-design
+-bulma layout
+-
+
+Daniel 
+-holiday API
+-design
+-local storage weather location
+-
